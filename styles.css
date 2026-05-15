@@ -736,6 +736,16 @@ p {
     contain: layout;
 }
 
+.launch-banner {
+    max-width: 1040px;
+    background: #f8edd9;
+}
+
+.launch-banner-shell {
+    display: grid;
+    padding: 0;
+}
+
 .featured-shell {
     display: grid;
     grid-template-columns: minmax(0, 0.85fr) minmax(360px, 1fr);
@@ -817,6 +827,33 @@ p {
     aspect-ratio: auto;
     object-fit: contain;
     filter: drop-shadow(0 22px 24px rgba(0, 0, 0, 0.32));
+}
+
+.image-zoom.launch-banner-image {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 0;
+    overflow: hidden;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: #f8edd9;
+    box-shadow: none;
+    aspect-ratio: 1672 / 941;
+}
+
+.image-zoom.launch-banner-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-zoom.launch-banner-image:hover img {
+    transform: scale(1.015);
 }
 
 .featured-photo figcaption {
@@ -1228,6 +1265,11 @@ p {
     font-size: 1.05rem;
 }
 
+.founder-text strong {
+    color: var(--color-forest);
+    font-weight: 700;
+}
+
 .founder-quote {
     margin: 1.5rem 0 0;
     padding-left: 1.5rem;
@@ -1266,6 +1308,20 @@ p {
     object-position: center top;
 }
 
+.founder-figure.founder-figure--document img {
+    height: auto;
+    min-height: 0;
+    padding: 0.7rem;
+    aspect-ratio: auto;
+    object-fit: contain;
+    object-position: center;
+    background: var(--color-paper);
+}
+
+.founder-figure.founder-figure--document .image-zoom:hover img {
+    transform: none;
+}
+
 .values-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
@@ -1281,6 +1337,11 @@ p {
     margin-bottom: 0.8rem;
     font-size: 1.25rem;
     text-transform: uppercase;
+}
+
+.value-card strong {
+    color: var(--color-forest);
+    font-weight: 700;
 }
 
 .final-cta {
@@ -1591,6 +1652,10 @@ p {
 
     .featured-photo-button img {
         max-height: 230px;
+    }
+
+    .image-zoom.launch-banner-image {
+        border-radius: 0;
     }
 
     .featured-photo figcaption {
