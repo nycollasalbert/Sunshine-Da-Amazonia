@@ -341,15 +341,36 @@ p {
 
 .brand {
     display: inline-flex;
-    max-width: min(62vw, 430px);
+    min-width: 0;
     align-items: center;
-    line-height: 0;
+    gap: 0.45rem;
+    color: var(--color-paper);
+    text-decoration: none;
 }
 
-.brand-logo {
-    width: auto;
-    height: clamp(4.2rem, 9vw, 6.3rem);
-    object-fit: contain;
+.brand-symbol {
+    color: var(--color-gold);
+    font-family: Arial, sans-serif;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    line-height: 1;
+}
+
+.brand-name {
+    font-family: var(--font-body);
+    font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+}
+
+.brand-name span {
+    display: block;
+    margin-top: 0.2rem;
+    color: var(--color-gold);
+    font-size: 0.62em;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .header-actions {
