@@ -2,9 +2,6 @@
   "name": "sunshine-da-amazonia",
   "private": true,
   "scripts": {
-    "build": "esbuild product-carousel.jsx --bundle --minify --jsx=automatic --format=iife --outfile=product-carousel.bundle.js",
-    "test": "node --check script.js && node --check product-carousel.bundle.js && node check-products.cjs"
-  },
-  "dependencies": { "react": "19.3.1", "react-dom": "19.3.1" },
-  "devDependencies": { "esbuild": "0.28.2" }
+    "test": "node --check script.js && node check-products.cjs"
+  }
 }

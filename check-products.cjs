@@ -16,7 +16,7 @@ for (const match of baseline.matchAll(/(?:src|data-full)="(sunshine-assets-audit
 assert.match(html, /src="sunshine-assets-audit\/oleodeacai.jpeg"/);
 assert.doesNotMatch(html, /exclusive-blends-title|Blends Exclusivos|Potência Indígena|cXJ1kMPq-11.webp/);
 assert.match(html, /<li class="tag">Açaí<\/li>/);
-assert.match(html, /id="product-carousel-root"/);
+assert.doesNotMatch(html, /product-carousel|concave-carousel/, 'Carousel must be removed');
 assert.match(html, /product-enhancements.css/);
 assert.doesNotMatch(html, /preview.css|glossy.css|noindex/);
 for (const match of html.matchAll(/(?:src|href|data-full)="([^"#]+)"/g)) {
@@ -29,4 +29,4 @@ assert.match(css, /\.products-footer[\s\S]*clamp\(1.15rem, 2vw, 1.45rem\)/);
 assert.doesNotMatch(css, /\.site-header|\.hero\s*\{|\.launch-banner/);
 assert.match(html, /<img class="brand-logo" src="sunshine-assets-audit\/marca-dourada\.png" alt="Sunshine da Amazônia"/, 'Header must use the golden brand logo');
 assert.ok(fs.existsSync(path.join(__dirname, 'sunshine-assets-audit', 'marca-dourada.png')), 'Brand logo asset must exist');
-console.log('PASS: preserved banners/hero, assets, removed product, copy, carousel, brand logo and scoped styles');
+console.log('PASS: preserved banners/hero, assets, removed product, copy, no carousel, brand logo and scoped styles');

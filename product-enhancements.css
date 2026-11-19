@@ -20,9 +20,6 @@ body .btn:focus-visible, body .header-cta:focus-visible, body .concave-carousel_
 @media (max-width: 480px) { .brand .brand-logo { height: 52px; } }
 @media (prefers-reduced-motion: reduce) { .brand .brand-logo { transition: none; } }
 body .products-footer { font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 700; line-height: 1.65; }
-.product-carousel-panel { max-width: 680px; margin: 32px auto 48px; padding: clamp(12px, 3vw, 28px); border-radius: 20px; background: #f1eee7; overflow: hidden; }
-.product-carousel-panel h3 { margin: 0 0 16px; text-align: center; color: #062312; }
-#product-carousel-root > img { width: 30%; height: 280px; object-fit: contain; }
 @supports not (backdrop-filter: blur(1px)) { body .btn:not(.btn-primary), body .concave-carousel__controls button { background: #183f2c; } }
 @media (prefers-reduced-motion: reduce) { body .btn, body .header-cta, body .concave-carousel__controls button { transition: none; } body .btn:hover, body .header-cta:hover, body .concave-carousel__controls button:hover { transform: none; } }
 @media (forced-colors: active) { body .btn, body .header-cta, body .concave-carousel__controls button { background: Canvas; color: CanvasText; border: 1px solid ButtonText; box-shadow: none; } }
