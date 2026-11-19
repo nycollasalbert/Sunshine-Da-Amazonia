@@ -1,0 +1,9 @@
+.git/
+.env*
+*.log
+node_modules/
+docs/
+*.jsx
+check-products.cjs
+package.json
+package-lock.json

@@ -1,0 +1,24 @@
+/* Only actions and the new product showcase; official banners remain intact. */
+body .btn, body .header-cta, body .concave-carousel__controls button {
+  border: 1px solid #ffffff5c; border-radius: 16px;
+  background: linear-gradient(145deg, #62836b9c 0%, #183f2cec 48%, #0c2c1fe8 100%); color: #fffaf0;
+  box-shadow: inset 0 1px 0 #ffffff66, inset 0 -1px 0 #ffffff12, 0 12px 30px #031a1926;
+  text-decoration: none; backdrop-filter: blur(16px) saturate(150%); -webkit-backdrop-filter: blur(16px) saturate(150%);
+  transition: transform 180ms, box-shadow 180ms, border-color 180ms;
+}
+body .btn-primary, body .header-cta {
+  color: #172b16; border-color: #fff1bead;
+  background: linear-gradient(160deg, #fff4cded 0%, #e8c967e6 35%, #c6a03be8 70%, #f4d989ed 100%);
+  box-shadow: inset 0 1px 0 #fff9e5, inset 0 -2px 3px #84600c33, 0 8px 24px #8a6b1724;
+}
+body .btn:hover, body .header-cta:hover, body .concave-carousel__controls button:hover {
+  border-color: #fff5ce; box-shadow: inset 0 1px 0 #ffffffa6, inset 0 -1px 0 #ffffff26, 0 12px 28px #06231230; transform: translateY(-2px);
+}
+body .btn:focus-visible, body .header-cta:focus-visible, body .concave-carousel__controls button:focus-visible { outline: 3px solid #9a7623; outline-offset: 4px; }
+body .products-footer { font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 700; line-height: 1.65; }
+.product-carousel-panel { max-width: 680px; margin: 32px auto 48px; padding: clamp(12px, 3vw, 28px); border-radius: 20px; background: #f1eee7; overflow: hidden; }
+.product-carousel-panel h3 { margin: 0 0 16px; text-align: center; color: #062312; }
+#product-carousel-root > img { width: 30%; height: 280px; object-fit: contain; }
+@supports not (backdrop-filter: blur(1px)) { body .btn:not(.btn-primary), body .concave-carousel__controls button { background: #183f2c; } }
+@media (prefers-reduced-motion: reduce) { body .btn, body .header-cta, body .concave-carousel__controls button { transition: none; } body .btn:hover, body .header-cta:hover, body .concave-carousel__controls button:hover { transform: none; } }
+@media (forced-colors: active) { body .btn, body .header-cta, body .concave-carousel__controls button { background: Canvas; color: CanvasText; border: 1px solid ButtonText; box-shadow: none; } }

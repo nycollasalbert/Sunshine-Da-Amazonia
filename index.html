@@ -11,7 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css?v=logo-legivel">
+    <link rel="stylesheet" href="product-carousel.bundle.css?v=1">
+    <link rel="stylesheet" href="product-enhancements.css?v=1">
     <script src="script.js" defer></script>
+    <script src="product-carousel.bundle.js?v=1" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
@@ -225,9 +228,19 @@
                     </div>
                 </article>
 
+                <div class="product-carousel-panel" aria-labelledby="carousel-products-title">
+                    <h3 id="carousel-products-title">Conheça nossos blends</h3>
+                    <div id="product-carousel-root">
+                        <img src="sunshine-assets-audit/sunshine_prostata_transparente.png" alt="Blend Tratamento da Próstata — 30 ml" width="800" height="1200">
+                        <img src="sunshine-assets-audit/sunshine_reumatismo_transparente.png" alt="Blend Tratamento do Reumatismo — 30 ml" width="800" height="1200">
+                        <img src="sunshine-assets-audit/sunshine_alergia_transparente.png" alt="Blend da Alegria — 30 ml" width="800" height="1200">
+                    </div>
+                </div>
+
                 <section class="product-category reveal" aria-labelledby="natural-oils-title">
                     <h3 class="category-title" id="natural-oils-title">Óleos Naturais</h3>
                     <ul class="tag-list">
+                        <li class="tag">Açaí</li>
                         <li class="tag">Copaíba</li>
                         <li class="tag">Andiroba</li>
                         <li class="tag">Buriti</li>
@@ -235,18 +248,6 @@
                         <li class="tag">Sucupira</li>
                         <li class="tag">Mutamba</li>
                         <li class="tag">Seiva Sangue de Dragão</li>
-                    </ul>
-                </section>
-
-                <section class="product-category reveal" aria-labelledby="exclusive-blends-title">
-                    <h3 class="category-title" id="exclusive-blends-title">Blends Exclusivos</h3>
-                    <ul class="tag-list">
-                        <li class="tag">Blend da Alegria</li>
-                        <li class="tag">Faxina Natural</li>
-                        <li class="tag">Potência Indígena</li>
-                        <li class="tag">Vigor Máximo</li>
-                        <li class="tag">Sabedoria Ancestral</li>
-                        <li class="tag">Xarope Indígena</li>
                     </ul>
                 </section>
 
@@ -281,6 +282,7 @@
                 </div>
 
                 <div class="media-grid reveal delay-2" aria-label="Galeria de produtos Sunshine da Amazônia">
+                    <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/oleodeacai.jpeg" data-alt="Óleo de Açaí Sunshine da Amazônia"><img src="sunshine-assets-audit/oleodeacai.jpeg" alt="Óleo de Açaí Sunshine da Amazônia" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/dSQ7G1P-1.webp" data-alt="Produto Sunshine da Amazônia 1"><img src="sunshine-assets-audit/web/dSQ7G1P-1.webp" alt="Produto Sunshine da Amazônia 1" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/bRdVGnwn-2.webp" data-alt="Produto Sunshine da Amazônia 2"><img src="sunshine-assets-audit/web/bRdVGnwn-2.webp" alt="Produto Sunshine da Amazônia 2" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/fzyHDxCd-3.webp" data-alt="Produto Sunshine da Amazônia 3"><img src="sunshine-assets-audit/web/fzyHDxCd-3.webp" alt="Produto Sunshine da Amazônia 3" loading="lazy" decoding="async"></button>
@@ -291,7 +293,6 @@
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/CK3xbj0k-8.webp" data-alt="Produto Sunshine da Amazônia 8"><img src="sunshine-assets-audit/web/CK3xbj0k-8.webp" alt="Produto Sunshine da Amazônia 8" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/kV46Q1QX-9.webp" data-alt="Produto Sunshine da Amazônia 9"><img src="sunshine-assets-audit/web/kV46Q1QX-9.webp" alt="Produto Sunshine da Amazônia 9" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/5XFDYfQK-10.webp" data-alt="Produto Sunshine da Amazônia 10"><img src="sunshine-assets-audit/web/5XFDYfQK-10.webp" alt="Produto Sunshine da Amazônia 10" loading="lazy" decoding="async"></button>
-                    <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/cXJ1kMPq-11.webp" data-alt="Produto Sunshine da Amazônia 11"><img src="sunshine-assets-audit/web/cXJ1kMPq-11.webp" alt="Produto Sunshine da Amazônia 11" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/39xfPvm4-12.webp" data-alt="Produto Sunshine da Amazônia 12"><img src="sunshine-assets-audit/web/39xfPvm4-12.webp" alt="Produto Sunshine da Amazônia 12" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/jvkRm0kD-13.webp" data-alt="Produto Sunshine da Amazônia 13"><img src="sunshine-assets-audit/web/jvkRm0kD-13.webp" alt="Produto Sunshine da Amazônia 13" loading="lazy" decoding="async"></button>
                     <button class="image-zoom" type="button" data-image-zoom data-full="sunshine-assets-audit/web/ZRH6vYDW-14.webp" data-alt="Produto Sunshine da Amazônia 14"><img src="sunshine-assets-audit/web/ZRH6vYDW-14.webp" alt="Produto Sunshine da Amazônia 14" loading="lazy" decoding="async"></button>
@@ -308,7 +309,6 @@
                 <p class="products-footer reveal">Mais de 15 produtos disponíveis.<br>Conheça o catálogo completo ao se tornar representante.</p>
 
                 <aside class="legal-disclaimer reveal delay-1" aria-label="Informações legais dos produtos">
-                    <p>Produtos isentos de registro conforme Resolução da Diretoria Colegiada — RDC nº 240, de 26 de julho de 2018.</p>
                     <p>Embalado por: Sunshine Produtos Naturais e Orgânicos | CNPJ: 10.830.693/0001-01</p>
                     <p>CBO: 6320-10 / 3221-25 | Dr.ª Raiz: Maria de Fátima de Menezes Cintra</p>
                 </aside>
