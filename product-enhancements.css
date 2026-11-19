@@ -15,6 +15,10 @@ body .btn:hover, body .header-cta:hover, body .concave-carousel__controls button
   border-color: #fff5ce; box-shadow: inset 0 1px 0 #ffffffa6, inset 0 -1px 0 #ffffff26, 0 12px 28px #06231230; transform: translateY(-2px);
 }
 body .btn:focus-visible, body .header-cta:focus-visible, body .concave-carousel__controls button:focus-visible { outline: 3px solid #9a7623; outline-offset: 4px; }
+.brand .brand-logo { display: block; width: auto; height: 64px; max-width: 100%; object-fit: contain; filter: drop-shadow(0 1px 2px #06231240); transition: height 180ms; }
+.is-scrolled .brand .brand-logo { height: 48px; }
+@media (max-width: 480px) { .brand .brand-logo { height: 52px; } }
+@media (prefers-reduced-motion: reduce) { .brand .brand-logo { transition: none; } }
 body .products-footer { font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 700; line-height: 1.65; }
 .product-carousel-panel { max-width: 680px; margin: 32px auto 48px; padding: clamp(12px, 3vw, 28px); border-radius: 20px; background: #f1eee7; overflow: hidden; }
 .product-carousel-panel h3 { margin: 0 0 16px; text-align: center; color: #062312; }

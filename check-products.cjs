@@ -1,5 +1,6 @@
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
+const path = require('node:path');
 const { execFileSync } = require('node:child_process');
 const html = fs.readFileSync('index.html', 'utf8');
 const baseline = execFileSync('git', ['show', 'before-preview-features-20261119:index.html'], { encoding: 'utf8' });
@@ -26,4 +27,6 @@ const css = fs.readFileSync('product-enhancements.css', 'utf8');
 assert.match(css, /backdrop-filter/);
 assert.match(css, /\.products-footer[\s\S]*clamp\(1.15rem, 2vw, 1.45rem\)/);
 assert.doesNotMatch(css, /\.site-header|\.hero\s*\{|\.launch-banner/);
-console.log('PASS: preserved banners/hero, assets, removed product, copy, carousel and scoped styles');
+assert.match(html, /<img class="brand-logo" src="sunshine-assets-audit\/marca-dourada\.png" alt="Sunshine da Amazônia"/, 'Header must use the golden brand logo');
+assert.ok(fs.existsSync(path.join(__dirname, 'sunshine-assets-audit', 'marca-dourada.png')), 'Brand logo asset must exist');
+console.log('PASS: preserved banners/hero, assets, removed product, copy, carousel, brand logo and scoped styles');
